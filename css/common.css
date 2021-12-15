@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+header h1, header h3 {
+  color: #fff;
+}
+#sidebar-wrapper {
+  background: #185ADB;}
+/* About me */
+.about {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.about > div {
+  flex: 1 1 30%;
+}
+.about h3 {
+  margin-bottom: 15px;
+}
+.about p {
+  line-height: 1.8;
+  color: #0A1931;
+}
+/* my skills */
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-html {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/img/w3_html5-icon.png) no-repeat center / 36px auto;
+}
+.icon-css {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/img/w3_css-icon.png) no-repeat center / 36px auto;
+}
+.icon-jQuery {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/img/jquery-vertical.png) no-repeat center / 36px auto;
+}
+.icon-design {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: url(../assets/img/design.png) no-repeat center / 36px auto;
+}
+/* portfolio */
+@media (min-width: 992px) {
+.portfolio-item .caption .caption-content {
+  margin-bottom: 3rem;
+}
+}
+
+
+/* contact */
+section#contact .social-link {
+  display: inline-block;
+  text-decoration: none;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+section#contact .social-link:hover {
+  background-color: #FFC947;
+  color: #fff;
+  text-decoration: none;
+}
+
+section#contact li {
+  text-align: center;
+  margin: 0 auto;
+}
+section#contact li a {
+  text-align: center;
+}
+section#contact span {
+  display: inline-block;
+  width: 300px;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  text-align: left;
+}
+/* footer */
