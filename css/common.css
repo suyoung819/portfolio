@@ -5,22 +5,45 @@ header h1, header h3 {
 }
 #sidebar-wrapper {
   background: #185ADB;}
+
 /* About me */
 .about {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
 }
 .about > div {
-  flex: 1 1 30%;
+  flex: 1 0 100%;
 }
 .about h3 {
   margin-bottom: 15px;
 }
-.about p {
+.about .txt_box {
   line-height: 1.8;
   color: #0A1931;
 }
+.about .txt_box dl {
+  width: 70%;
+  margin: 0 auto;
+}
+.about .txt_box dl dt {
+  display: table-cell;
+  padding-right: 30px;
+  font-size: 1.4rem;
+  width: 110px;
+  text-align: left;
+}
+.about .txt_box dl dd {
+  display: table-cell;
+}
+.about .license {
+  margin-top: 30px;
+}
+.about .license dl dt {
+  font-weight: normal;
+}
+
 /* my skills */
 .service-icon {
   display: flex;
@@ -92,3 +115,14 @@ section#contact span {
   text-align: left;
 }
 /* footer */
+
+
+@media (min-width: 768px) {
+  /* .about */
+  .about > div {
+    flex: 1 1 40%;
+  }
+  .about .license {
+    margin-top: 0px;
+  }
+}
