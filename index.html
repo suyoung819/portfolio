@@ -18,12 +18,21 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- AOS - Animate on scroll library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery-1.12.3.js"></script>
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/common.css">
 </head>
 
 <body id="page-top">
+  <!-- aos -->
+  <script>
+    AOS.init({duration:1200});
+  </script>
   <!-- Navigation-->
   <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
   <nav id="sidebar-wrapper">
@@ -48,11 +57,10 @@
     <div class="container px-4 px-lg-5 text-center">
       <div class="row gx-4 gx-lg-5 justify-content-center">
         <div class="content-section-heading">
-          <h2 class="mb-5">About Me</h2>
-          <!-- <p class="lead mb-5"></p> -->
+          <h2 class="mb-5" data-aos="fade-up">About Me</h2>
         </div>
         <div class="about">
-          <div>
+          <div  data-aos="fade-right">
             <h3 class="text-secondary">Profile</h3>
             <div class="txt_box">
               <dl>
@@ -69,7 +77,7 @@
               </dl>
             </div>
           </div>
-          <div class="license">
+          <div class="license" data-aos="fade-left">
             <h3 class="text-secondary">License</h3>
             <div class="txt_box">
               <dl>
@@ -107,9 +115,9 @@
     <div class="container px-4 px-lg-5">
       <div class="content-section-heading">
         <!-- <h3 class="text-secondary mb-0">○</h3> -->
-        <h2 class="mb-5">My Skills</h2>
+        <h2 class="mb-5" data-aos="fade-up">My Skills</h2>
       </div>
-      <div class="row gx-4 gx-lg-5">
+      <div class="row gx-4 gx-lg-5" data-aos="fade-up">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-html"></i></span>
           <h4><strong>HTML</strong></h4>
@@ -151,11 +159,11 @@
   <!-- Portfolio-->
   <section class="content-section" id="portfolio">
     <div class="container px-4 px-lg-5">
-      <div class="content-section-heading text-center">
+      <div class="content-section-heading text-center" data-aos="fade-up">
         <h2 class="mb-0">Projects</h2>
         <h3 class="text-secondary mb-5">Portfolio</h3>
       </div>
-      <div class="row gx-0">
+      <div class="row gx-0" data-aos="fade-up">
         <div class="col-lg-6">
           <a class="portfolio-item" href="https://suyoung819.github.io/happybaobab/" target="_blink">
             <div class="caption">
@@ -205,10 +213,10 @@
   </section>
   <!-- Call to Action-->
   <section id="contact" class="content-section bg-primary text-white">
-    <div class="content-section-heading container px-4 px-lg-5 text-center">
+    <div class="content-section-heading container px-4 px-lg-5 text-center" data-aos="fade-up">
       <h2 class="mb-0">Contact</h2>
       <h3 class="text-secondary mb-5">Thank you</h3>
-      <ul class="list-inline mb-5">
+      <ul class="list-inline mb-5" data-aos="fade-up">
         <li>
           <a class="social-link rounded-circle mr-3 mb-2" href="#!"><i class="icon-envelope"></i></a>
           <span>hojong8692@naver.com</span>
